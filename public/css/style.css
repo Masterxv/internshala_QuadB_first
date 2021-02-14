@@ -246,7 +246,6 @@ table tbody tr td:last-child {
   }
   #table-div table td {
     font-size: 1rem;
-    font-weight: bold;
     padding: 0.8rem;
   }
 }
