@@ -1,54 +1,46 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
-body{
+body {
   background-color: #22212e;
 }
 
-#header{
+#header {
   display: flex;
 }
 
-#header #logo{
+#header #logo {
   margin-left: 30px;
   margin-top: 30px;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-#header #option{
-  margin: 0 auto;
-  margin-top: 55px;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-#header #more{
-  margin-right: 0;
-  margin-top: 40px;
-  display: flex;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-#header #logo h1{
+#header #logo h1 {
   color: #2dcccc;
   font-weight: 300;
 }
 
-#header #logo p{
+#header #logo p {
   color: #2dcccc;
   margin-top: 10px;
   font-weight: bold;
 }
 
-#header #logo span{
+#header #logo span {
   font-size: 1rem;
   color: grey;
 }
 
-#header #option .select{
+#header #option {
+  margin: 0 auto;
+  margin-top: 55px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#header #option .select {
   color: white;
   background-color: #3e3d53;
   padding: 7px;
@@ -58,8 +50,15 @@ body{
   box-shadow: 1px 1px #2d2c3b;
 }
 
-#header #more #timer{
-  color: #2dcccc;
+#header #more {
+  margin-right: 0;
+  margin-top: 40px;
+  display: flex;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#header #more #timer {
+  color: white;
   text-align: center;
   padding-top: 6px;
   width: 40px;
@@ -69,7 +68,7 @@ body{
   border-radius: 100px;
 }
 
-#header #more #telegram{
+#header #more #telegram {
   background-color: #2dcccc;
   color: white;
   font-size: 0.8rem;
@@ -84,7 +83,7 @@ body{
   padding-left: 20px;
 }
 
-#header #more #telegram i{
+#header #more #telegram i {
   background-color: #2dcccc;
   margin-right: 10px;
 }
@@ -99,7 +98,7 @@ body{
   margin-right: 20px;
 }
 
-.switch input { 
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -113,20 +112,20 @@ body{
   right: 0;
   bottom: 0;
   background-color: #3e3d53;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
   position: absolute;
-  content: "";
+  content: '';
   height: 16px;
   width: 16px;
   left: 4px;
   bottom: 4px;
   background-color: #2dcccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
@@ -152,8 +151,7 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-
-#table-div{
+#table-div {
   width: 80%;
   margin: auto;
   color: aliceblue;
@@ -161,47 +159,94 @@ input:checked + .slider:before {
   margin-top: 40px;
 }
 
-#table-div table{
+#table-div table {
   width: 100%;
   text-align: center;
   border-radius: 10px;
   border-spacing: 0 15px;
 }
 
-#table-div table th{
+#table-div table th {
   color: grey;
   font-size: 1.2rem;
   font-weight: bold;
   font-family: 'Source Sans Pro', sans-serif;
-  padding: 10px;
+  padding: 20px;
 }
 
-#table-div table .trHover{
+#table-div table .trHover {
   background-color: #3e3d53;
   padding: 10px;
   border-radius: 10px;
   height: 50px;
   margin: 20px;
-  
 }
 
 #table-div table td {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: bold;
-  text-transform: uppercase;
 }
 
-#table-div table .base-unit{
-  text-transform: lowercase;
-}
-
-table td:first-child{
+table td:first-child {
   border-left: 1px solid #000000;
 }
 table tbody tr td:first-child {
-  border-radius: 10px 0 0 10px;
+  border-radius: 20px 0 0 20px;
 }
 
 table tbody tr td:last-child {
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 20px 20px 0;
+}
+
+@media (max-width: 768px) {
+  #header {
+    display: block;
+  }
+
+  #header #logo {
+    margin: 10px auto;
+    width: 11.5rem;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  #header #logo p {
+    text-align: center;
+  }
+
+  #header #option {
+    margin: 0 auto;
+    width: 10rem;
+    margin-top: 35px;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  #header #more {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 15rem;
+    display: flex;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  #header #more #telegram {
+    font-size: 0.7rem;
+    height: 39px;
+    width: 150px;
+    border-radius: 10px;
+    padding: 7px;
+    padding-left: 10px;
+  }
+
+  #table-div {
+    width: 100%;
+    margin: auto;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 40px;
+    overflow-x: auto;
+  }
+  #table-div table td {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.8rem;
+  }
 }
