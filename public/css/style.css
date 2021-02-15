@@ -163,7 +163,7 @@ input:checked + .slider:before {
   width: 100%;
   text-align: center;
   border-radius: 10px;
-  border-spacing: 0 15px;
+  border-spacing: 0 15px !important;
 }
 
 #table-div table th {
@@ -174,7 +174,7 @@ input:checked + .slider:before {
   padding: 20px;
 }
 
-#table-div table .trHover {
+#table-div table .trHover-own {
   background-color: #3e3d53;
   padding: 10px;
   border-radius: 10px;
