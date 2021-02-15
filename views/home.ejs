@@ -51,7 +51,7 @@
           <% i++ %>
           <tr class="trHover" >
             <td scope="row"><%= i %></td>
-            <td scope="row"><%= details[key].base_unit %>/<%= details[key].quote_unit %></td>
+            <td scope="row" style="text-transform: uppercase;"><%= details[key].base_unit %>/<%= details[key].quote_unit %></td>
             <td scope="row"><%= details[key].last %></td>
             <td scope="row">₹ <%= details[key].sell %></td>
             <td scope="row"><%= details[key].volume %></td>
